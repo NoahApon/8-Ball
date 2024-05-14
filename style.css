@@ -1,0 +1,61 @@
+html {
+    text-align: center;
+   animation: backmove 10s infinite;
+   animation-delay:0s ;
+   animation-iteration-count: infinite;
+    animation-direction: forward;
+    background-color:  rgb(74, 11, 134);
+}
+ @keyframes backmove {
+        25% {background-color: rgb(8, 8, 109);}
+        50% {background-color: aqua;}
+        75% {background-color:deeppink;}
+        100%{background-color: rgb(74, 11, 134);}
+
+    }
+body {
+    margin: auto;
+    border: 10px solid black;
+    width: 900px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 100px;
+    font-family:fantasy;
+    font-weight: 100;
+}
+
+button {
+    border: solid black 160px; 
+    width: 600px;
+    height: 600px;
+    border-radius: 800px;
+    font-size: 200px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 80;
+}
+
+button:hover {
+    animation: spin 5s;
+    animation-delay:0 ;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+}
+
+@keyframes spin {
+    50% {
+        transform: rotate(720deg);
+    }
+}
